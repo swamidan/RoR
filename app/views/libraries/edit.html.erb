@@ -1,0 +1,11 @@
+<h1> Редактирование библиотеки </h1>
+
+<%= form_for @library do |f |%>
+
+  <p> Номер <br/><%=f.text_field :number_library %></p>
+  <p> Название <br/> <%=f.text_field :name_library %></p>
+  <p> Адресс <br/> <%=f.text_field :address_library  %></p>
+
+  <p><%= f.submit " Редактировать библиотеку" %></p>
+
+<% end %>

@@ -1,0 +1,15 @@
+h1> Редактирование нового сотрудника </h1>
+
+<%= form_for @employee do |f |%>
+
+  <p> Фамилия <br/><%=f.text_field :surname %></p>
+  <p> Имя <br/> <%=f.text_field :name %></p>
+  <p> Отчество <br/> <%=f.text_field :patronymic  %></p>
+  <p> Дата рождения <br/> <%=f.text_field :date_of_birth %></p>
+  <p> Дата принятия на работу <br/> <%=f.text_field :date_of_employment %></p>
+  <p> Должность  <br/> <%=f.text_field :position%></p>
+  <p> Образование <br/> <%=f.text_field :education%></p>
+
+  <p><%= f.submit " Редактировать сотрудника" %></p>
+
+<% end %>
